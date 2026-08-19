@@ -234,7 +234,7 @@ Cette image de chat est trop grande : utilise la technique que nous venons d'app
       Make the cat fit the viewport
     </h1>
     <img
-      src="/images/cat.jpg"
+      src="images/cat.jpg"
       alt=""
       class="img-cat"
     />

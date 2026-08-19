@@ -118,10 +118,10 @@ nav>ul>li>a>span {
 }
 ```
 
-**À noter** :
-
-- La propriété `inset` (ligne 14) sert à définir en une seule ligne les valeurs des propriétés `top`, `right`, `bottom` et `left`.
-- On utilise la propriété `display: none;` pour cacher le logo (ligne 24) et les textes des liens (ligne 46).
+>💡 **À noter** 
+>- La propriété `inset` (ligne 14) sert à définir en une seule ligne les valeurs des propriétés `top`, `right`, `bottom` et `left`.
+>- On utilise la propriété `display: none;` pour cacher le logo (ligne 24) et les textes des liens (ligne 46).
+{:.alert-info}
 
 # Tablet
 
@@ -195,11 +195,11 @@ nav>ul>li>a>span {
 }
 ```
 
-**À noter** :
-- L'ajout de *media query* n'ayant pas d'impact sur les spécificités, je prends soin de redéfinir les éléments **en-dessous de leur définition initiale** pour que les nouvelles valeurs soient correctement prises en compte par le navigateur.
-- J'ai choisi ici de répéter plusieurs fois, aux endroits les plus pertinents, la déclaration `@media screen and (min-width: 1024px) and (orientation: landscape)` pour faciliter la lecture du code et les mises à jour futures lorsque mon CSS aura beaucoup évolué.
+>💡 **À noter**
+>- L'ajout de *media query* n'ayant pas d'impact sur les spécificités, je prends soin de redéfinir les éléments **en-dessous de leur définition initiale** pour que les nouvelles valeurs soient correctement prises en compte par le navigateur.
+>- J'ai choisi ici de répéter plusieurs fois, aux endroits les plus pertinents, la déclaration `@media screen and (min-width: 1024px) and (orientation: landscape)` pour faciliter la lecture du code et les mises à jour futures lorsque mon CSS aura beaucoup évolué.
 
-> J'aurais pu déclarer une seule fois le `@media screen …` pour l'ensemble des éléments, en fin de fichier par exemple. Mais ce type de placement est difficilement maintenable lorsque mes fichiers CSS contiennent beaucoup de lignes. Le risque étant de passer à côté de certaines spécificités.
+J'aurais pu déclarer une seule fois le `@media screen …` pour l'ensemble des éléments, en fin de fichier par exemple. Mais ce type de placement est difficilement maintenable lorsque mes fichiers CSS contiennent beaucoup de lignes. Le risque étant de passer à côté de certaines spécificités.
 
 Voici ce que j'aurais alors obtenu :
 ```css
